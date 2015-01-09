@@ -123,7 +123,7 @@ exports = module.exports = function morgan(format, options) {
       }
 
       debug('log request')
-      stream.write(line + '\n')
+      stream.write(line + '\n', req, res)
     };
 
     // immediate
